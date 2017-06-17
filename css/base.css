@@ -1,0 +1,67 @@
+/*reset css*/
+*,
+::before,
+::after{
+	padding: 0;
+	margin: 0;
+
+	/*清除元素点击有高亮,设置其颜色为透明，则不显示*/
+	-webkit-tap-highlight-color:transparent;
+	-webkit-box-sizing:border-box;
+	box-sizing: border-box;
+}
+body{
+	font-size: 14px;
+	color: #333;
+	/*如果有雅黑则显示雅黑，如果没有则是浏览器默认字体*/
+	font-family: 'MicroSoft YaHei','sans-serif';
+}
+ul,ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color:#333;
+}
+a:hover{
+	color:#333;
+}
+input,textarea{
+	border:none;
+	outline:none;
+	resize:none;
+	/*清除一些浏览器默认的样式*/
+	-webkit-appearance:none;
+}
+.f_left{
+	float: left;
+}
+.f_right{
+	float: right;
+}
+.clearfix::before,
+.clearfix::after{
+	content: '';
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+.m_t10{
+	margin-top: 10px;
+}
+.m_l10{
+	margin-left: 10px;
+}
+.m_r10{
+	margin-right: 10px;
+}
+.m_b10{
+	margin-bottom: 10px;
+}
+
+/*common css 公共样式*/
+[class^='icon']{
+	background: url('../images/sprites.png') no-repeat;
+	background-size: 200px 200px;
+}
